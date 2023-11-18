@@ -59,6 +59,10 @@ header {
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.5);
 }
 
+#book {
+    /* border: 1px solid; */
+}
+
 .sticky-footer>p {
     margin-right: 0;
     text-align: center;

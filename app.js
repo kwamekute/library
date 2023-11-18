@@ -26,10 +26,23 @@ function render(){
     
     library.forEach(book => {
         console.log(book.title);
-        const para = document.createElement('p');
-        para.innerText = book.title;
+        const title = document.createElement('p');
+        title.innerText = book.title;
+        const author = document.createElement('p');
+        author.innerText = book.author;
+        const pages = document.createElement('p');
+        pages.innerText = book.pages;
+        const read = document.createElement('p');
+        let isRead = "";
+        book.read == true  ? isRead = "The book has been read" : "The book hasn't been read";
+        read.innerText = isRead;
 
-        card.appendChild(para);
+        console.log(isRead);
+
+        card.appendChild(title);
+        card.appendChild(author);
+        card.appendChild(pages);
+        card.appendChild(read);
     });
 }
 
