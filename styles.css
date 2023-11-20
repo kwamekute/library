@@ -31,12 +31,13 @@ body {
 .main {
     background-color: #DDD0C8;
     padding: 20px;
+    padding-top: 70px;
     min-height: 700px;
     margin: 65px 0 40px 0;
 }
 
 .main p {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -60,7 +61,17 @@ header {
 }
 
 #book {
-    /* border: 1px solid; */
+    display: flex;
+    gap: 30px;
+    /* justify-content: space-between; */
+}
+
+.inner-book {
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #F1ECE9;
+    box-shadow: 0 3px 10px;
+    flex: 1;
 }
 
 .sticky-footer>p {
